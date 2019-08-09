@@ -8,47 +8,47 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body class="has-navbar-fixed-top">
-    <nav class="level navbar is-primary is-fixed-top has-background-light">
-      <a class="navbar-item has-text-centered is-link" href="#about_me">About Me</a>
-      <a class="navbar-item has-text-centered is-link" href="#portfolio">Portfolio</a>
-      <p class="navbar-item has-text-centered is-size-4 is-uppercase has-text-weight-bold">
-        Allison Weiner
-      </p>
-      <a class="navbar-item has-text-centered is-link" href="#resume">Resume</a>
-      <a class="navbar-item has-text-centered is-link" href="#contact_me">Contact Me</a>
+    <nav class="navbar level is-primary is-fixed-top has-background-light" role="navigation">
+        <a class="navbar-item has-text-centered is-link" href="#about_me">About Me</a>
+        <a class="navbar-item has-text-centered is-link" href="#portfolio">Portfolio</a>
+        <p class="navbar-item has-text-centered is-size-4 is-uppercase has-text-weight-bold">
+          Allison Weiner
+        </p>
+        <a class="navbar-item has-text-centered is-link" href="#resume">Resume</a>
+        <a class="navbar-item has-text-centered is-link" href="#contact_me">Contact Me</a>
     </nav>
-    <section class="hero is-link is-fullheight-with-navbar has-background-dark">
+    <section class="hero is-link is-fullheight-with-navbar has-background-dark" style="position:relative;">
       <div class="hero-body" id="about_me">
-        <div class="columns is-block is-full">
-          <div class="column">
-            <figure class="image is-128x128">
-              <img src="resources/allison.jpg">
-            </figure>
-          <div class="inline-block">
-            <h1 class="title">
-              Allison Weiner
-            </h1>
-            <h2 class="subtitle">
-              Software Engineer
-            </h2>
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-2 is-parent" style="margin-top:10px">
+            <div class="tile is-child">
+              <figure class="image is-128x128">
+                <img class="is-rounded" src="resources/allison.jpg">
+              </figure>
+            </div>  
+            <div class="tile is-child">
+              <p class="title is-5">Allison Weiner</p>
+              <p class="subtitle is-6">Software Engineer</p>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <h1 class="title">So... who am I?</h1>
+              <p>After three years as an accountant at a Deaf-owned publishing firm, 
+              I realized I wanted to make an impact a different way. After 
+              deciding to transition to software engineering, I chose Holberton School 
+              because of their proven track record of helping people change their careers 
+              and because I felt their project-based model of education was a perfect fit for me. 
+              I recently completed the year-long Foundations Curriculum at Holberton and am currently looking for 
+              opportunities to contribute my Python backend skills to a socially conscious company committed to doing good.
+              <br>
+              <br>
+              I hope to work with people who are as excited about food, reading, and bicycling as I am.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="column">
-          <p>
-            After three years as an accountant at a Deaf-owned publishing firm, 
-            I realized I wanted to make an impact a different way. After 
-            deciding to transition to software engineering, I chose Holberton School 
-            because of their proven track record of helping people change their careers 
-            and because I felt their project-based model of education was a perfect fit for me. 
-            I recently completed the year-long Foundations Curriculum at Holberton and am currently looking for 
-            opportunities to contribute my Python backend skills to a socially conscious company committed to doing good.
-            <br>
-            <br>
-            I hope to work with people who are as excited about food, reading, and bicycling as I am.
-          </p>
-        </div>
-      </div> 
     </section>
     <section class="hero is-link is-fullheight-with-navbar has-background-grey-dark" id="portfolio">
       <div class="hero-body">
@@ -63,7 +63,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            <a href="resources/allison_weiner_resume.pdf">View My Resume</a>
+            <a href="resources/allison_weiner_resume.pdf" download="Allison_Weiner_Resume">Check out my resume</a>
           </h1>
         </div>
       </div>
@@ -80,5 +80,5 @@
         </div>
       </div>
     </section>
-   </body>
+  </body>
 </html>
