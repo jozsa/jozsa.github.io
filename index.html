@@ -9,28 +9,34 @@
   </head>
   <body class="has-navbar-fixed-top">
     <nav class="level navbar is-primary is-fixed-top has-background-light">
-      <a class="navbar-item has-text-centered">About Me</a>
-      <a class="navbar-item has-text-centered">Portfolio</a>
+      <a class="navbar-item has-text-centered is-link" href="#about_me">About Me</a>
+      <a class="navbar-item has-text-centered is-link" href="#portfolio">Portfolio</a>
       <p class="navbar-item has-text-centered is-size-4 is-uppercase has-text-weight-bold">
         Allison Weiner
       </p>
-      <a class="navbar-item has-text-centered">Resume</a>
-      <a class="navbar-item has-text-centered">Contact Me</a>
+      <a class="navbar-item has-text-centered is-link" href="#resume">Resume</a>
+      <a class="navbar-item has-text-centered is-link" href="#contact_me">Contact Me</a>
     </nav>
     <section class="hero is-link is-fullheight-with-navbar has-background-dark">
-      <div class="hero-body">
-        <div class="container">
-          <figure class="image is-128x128 is-inline-flex">
-            <img src="allison.jpg">
-          </figure>
-          <h1 class="title is-inline-flex">
-            Allison Weiner
-          </h1>
-          <h2 class="subtitle is-inline-flex">
-            Software Engineer
-          </h2>
+      <div class="hero-body" id="about_me">
+        <div class="columns is-block is-full">
+          <div class="column">
+            <figure class="image is-128x128">
+              <img src="resources/allison.jpg">
+            </figure>
+          <div class="inline-block">
+            <h1 class="title">
+              Allison Weiner
+            </h1>
+            <h2 class="subtitle">
+              Software Engineer
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="column">
           <p>
-            After three years as an accountant at a Deaf-owned business, 
+            After three years as an accountant at a Deaf-owned publishing firm, 
             I realized I wanted to make an impact a different way. After 
             deciding to transition to software engineering, I chose Holberton School 
             because of their proven track record of helping people change their careers 
@@ -39,11 +45,12 @@
             opportunities to contribute my Python backend skills to a socially conscious company committed to doing good.
             <br>
             <br>
-            I am hoping to work with people who are as excited about food, reading, and bicycling as I am.
+            I hope to work with people who are as excited about food, reading, and bicycling as I am.
           </p>
-        </div>    
+        </div>
+      </div> 
     </section>
-    <section class="hero is-link is-fullheight-with-navbar has-background-grey-dark">
+    <section class="hero is-link is-fullheight-with-navbar has-background-grey-dark" id="portfolio">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
@@ -52,16 +59,16 @@
         </div>
       </div>
     </section>
-    <section class="hero is-link is-fullheight-with-navbar has-background-grey-darker">
+    <section class="hero is-link is-fullheight-with-navbar has-background-grey-darker" id="resume">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            Resume
+            <a href="resume.html">View My Resume here</a>
           </h1>
         </div>
       </div>
     </section>
-    <section class="hero is-link is-fullheight-with-navbar has-background-black-bis">
+    <section class="hero is-link is-fullheight-with-navbar has-background-black-bis" id="contact_me">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
