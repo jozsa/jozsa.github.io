@@ -5,108 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Allison Weiner, Software Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/favicon_io/favicon.ico">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="scripts/burger.js"></script>
   </head>
   <body class="has-navbar-fixed-top">
-    <nav class="navbar level is-primary is-fixed-top has-background-light" role="navigation">
-        <a class="navbar-item has-text-centered is-link" href="#about_me">About Me</a>
-        <a class="navbar-item has-text-centered is-link" href="#portfolio">Portfolio</a>
-        <p class="navbar-item has-text-centered is-size-4 is-uppercase has-text-weight-bold">
-          Allison Weiner
-        </p>
-        <a class="navbar-item has-text-centered is-link" href="#resume">Resume</a>
-        <a class="navbar-item has-text-centered is-link" href="#contact_me">Contact Me</a>
+    <nav class="navbar is-fixed-top" role="navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <p>ALLISON WEINER</p>
+        </a>
+
+        <a role="button" class="navbar-burger burger is-hidden-desktop" aria-label="menu" aria-expanded="false" data-target="mainMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="mainMenu" class="navbar-menu is-active">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#portfolio">
+            Portfolio
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Resume
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="resources/allison_weiner_resume.pdf">
+                View
+              </a>
+              <a class="navbar-item" href="resources/allison_weiner_resume.pdf" download="Allison_Weiner_Resume">
+                Download
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item" href="#contact">
+            Contact Me
+          </a>
+        </div>
+        <div class="navbar-end"></div>
+      </div>
     </nav>
-    <section class="hero is-link is-fullheight-with-navbar has-background-dark" style="position:relative;">
-      <div class="hero-body" id="about_me">
+    <section class="hero is-fullheight-with-navbar has-background-white has-text-black">
+      <div class="hero-body">
         <div class="tile is-ancestor">
-          <div class="tile is-vertical is-2 is-parent" style="margin-top:10px; align-items:center;">
+          <div class="tile is-vertical is-2 is-parent">
             <div class="tile is-child">
               <figure class="image is-128x128">
                 <img class="is-rounded" src="resources/allison.jpg">
               </figure>
             </div>
             <div class="tile is-child">
-              <p class="title is-5">Allison Weiner</p>
-              <p class="subtitle is-6">Software Engineer</p>
+              <p class="title is-5 has-text-black">Allison Weiner</p>
+              <p class="subtitle is-6 has-text-black">Software Engineer</p>
             </div>
           </div>
           <div class="tile is-parent">
             <div class="tile is-child">
-              <h1 class="title">So... who am I?</h1>
-              <p>After three years as an accountant at a Deaf-owned publishing firm,
-              I realized I wanted to make an impact a different way. After
-              deciding to transition to software engineering, I chose Holberton School
-              because of their proven track record of helping people change their careers
-              and because I felt their project-based model of education was a perfect fit for me.
-              I recently completed the year-long Foundations Curriculum at Holberton and am currently looking for
-              opportunities to contribute my Python backend skills to a socially conscious company committed to doing good.
-              <br>
-              <br>
-              I hope to work with people who are as excited about food, reading, and bicycling as I am.
+              <h1 class="title has-text-black">So... who am I?</h1>
+              <p>
+                  After three years as an accountant at a Deaf-owned publishing firm, 
+                  I realized I wanted to make an impact in a different way. After deciding 
+                  to transition to software engineering, I chose Holberton School because 
+                  of their proven track record of helping people change their careers and 
+                  because I felt their project-based model of education was a perfect fit 
+                  for me. I recently completed the year-long Foundations Curriculum at 
+                  Holberton and am currently looking for opportunities to contribute my 
+                  Python backend skills to a socially conscious company committed to doing 
+                  good.
+                <br>
+                <br>
+                I hope to work with people who are as excited about food, reading, and bicycling as I am.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="hero is-link is-fullheight-with-navbar has-background-grey-dark" id="portfolio">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            PROJECTS
-          </h1>
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title has-text-black">Chickenpix 🐔</p>
-                <p class="subtitle has-text-black">Photosharing without social media</p>
-                <p class="subtitle has-text-black"><strong class="has-text-black">Technologies: </strong>Django, HTML/CSS, SQLite</p>
-                <p><a class="subtitle has-text-link" href="https://github.com/jozsa/pixguise">view code</a></p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title has-text-black">AirBnB Clone</p>
-                <p class="subtitle has-text-black">An interactive clone with database storage</p>
-                <p class="subtitle has-text-black"><strong class="has-text-black">Technologies: </strong>Python, HTML/CSS, Javascript, MySQL/SQLAlchemy</p>
-                <p><a class="subtitle has-text-link" href="https://github.com/jozsa/AirBnB_clone_v4">view code</a></p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title has-text-black">Simple Shell</p>
-                <p class="subtitle has-text-black">Command interpreter built from scratch in C</p>
-                <p class="subtitle has-text-black"><strong class="has-text-black">Technologies: </strong>C, C, and C</p>
-                <p><a class="subtitle has-text-link" href="https://github.com/jozsa/simple_shell">view code</a></p>
-              </article>
+    <section class="hero is-fullheight-with-navbar has-background-white" id="portfolio">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              PROJECTS
+            </h1>
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title has-text-black">Chickenpix 🐔</p>
+                  <p class="subtitle has-text-black">Photosharing without social media</p>
+                  <p class="subtitle has-text-black"><strong class="has-text-black">Technologies: </strong>Django, HTML/CSS, SQLite</p>
+                  <p><a class="subtitle has-text-link" href="https://github.com/jozsa/pixguise">view code</a></p>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title has-text-black">AirBnB Clone</p>
+                  <p class="subtitle has-text-black">An interactive clone with database storage</p>
+                  <p class="subtitle has-text-black"><strong class="has-text-black">Technologies: </strong>Python, HTML/CSS, Javascript, MySQL/SQLAlchemy</p>
+                  <p><a class="subtitle has-text-link" href="https://github.com/jozsa/AirBnB_clone_v4">view code</a></p>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title has-text-black">Simple Shell</p>
+                  <p class="subtitle has-text-black">Command interpreter built from scratch in C</p>
+                  <p class="subtitle has-text-black"><strong class="has-text-black">Technologies: </strong>C, C, and C</p>
+                  <p><a class="subtitle has-text-link" href="https://github.com/jozsa/simple_shell">view code</a></p>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="hero is-link is-fullheight-with-navbar has-background-grey-darker" id="resume">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            <a href="resources/allison_weiner_resume.pdf">Check out my resume...</a>
-          </h1>
-          <h2 class="subtitle">
-              or just <a class="has-text-link" href="resources/allison_weiner_resume.pdf" download="Allison_Weiner_Resume">download</a> it.
-          </h2>
-        </div>
-      </div>
-    </section>
-    <section class="hero is-link is-fullheight-with-navbar has-background-black-bis" id="contact_me">
-      <div class="hero-body">
+      <div class=" hero-body">
         <div class="container">
           <h1 class="title">
             Now that you like what you see, how do you contact me?
           </h1>
           <p>
-            You can find me on <a href="https://github.com/jozsa">Github</a>, <a href="https://twitter.com/weinermeister">twitter</a>, and <a href="https://www.linkedin.com/in/allison-weiner-4942317a/">LinkedIn</a>, or you can just email me at <a href="mailto:allisonjoyweiner@gmail.com">allisonjoyweiner@gmail.com</a>.
+            You can find me on <a href="https://github.com/jozsa">Github</a>, <a href="https://twitter.com/weinermeister">twitter</a>, and <a href="https://www.linkedin.com/in/allison-weiner-4942317a/">LinkedIn</a>, or you can email me at <a href="mailto:allisonjoyweiner@gmail.com">allisonjoyweiner@gmail.com</a>.
           </p>
-        </div>
+        </div>  
+      </div>
+      <div class=" hero-body">
+        <div class="container" id="contact">
+          <h1 class="title has-text-black">
+            Before you go, check out my <a href="resources/allison_weiner_resume.pdf">resume</a>...
+          </h1>
+          <h2 class="subtitle has-text-black">
+            or just <a class="has-text-link" href="resources/allison_weiner_resume.pdf" download="Allison_Weiner_Resume">download</a> it.
+          </h2>
+        </div>  
       </div>
     </section>
   </body>
