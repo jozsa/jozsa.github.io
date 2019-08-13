@@ -35,7 +35,7 @@
               Resume
             </a>
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="resources/allison_weiner_resume.pdf">
+              <a class="navbar-item" href="resources/allison_weiner_resume.pdf" target="_blank">
                 View
               </a>
               <a class="navbar-item" href="resources/allison_weiner_resume.pdf" download="Allison_Weiner_Resume">
@@ -85,7 +85,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-foot">
+      <div class="hero-foot" id="portfolio">
         <div class="container has-text-centered">
           <a class="title has-text-weight-bold" href="#portfolio">
             PORTFOLIO
@@ -100,12 +100,15 @@
         </div>
       </div>
     </section>
-    <section class="hero is-fullheight-with-navbar has-background-white-bis" id="portfolio">
+    <section class="hero is-fullheight-with-navbar has-background-white-bis">
         <div class="hero-body">
           <div class="container">
             <div class="tile is-ancestor">
               <div class="tile is-parent">
                 <article class="tile is-child box has-background-white-ter">
+                  <figure class="image is-3by2" style="margin:auto;">
+                    <img src="resources/chickenpix.png">
+                  </figure>
                   <p class="title has-text-dark">Chickenpix 🐔</p>
                   <p class="subtitle has-text-dark">Photosharing without social media</p>
                   <p class="subtitle has-text-dark"><strong class="has-text-dark">Technologies: </strong>Django, HTML/CSS, SQLite</p>
@@ -114,43 +117,51 @@
               </div>
               <div class="tile is-parent">
                 <article class="tile is-child box has-background-white-ter">
+                  <figure class="image is-3by2" style="margin:auto;">
+                    <img src="resources/monty.png">
+                  </figure>
+                  <p class="title has-text-dark">Monty Interpreter</p>
+                  <p class="subtitle has-text-dark">Accepts text files containing Monty 0.98 commands as input and performs stack operations<p>
+                  <p class="subtitle has-text-dark"><strong class="has-text-dark">Technologies: </strong>C, C, and C</p>
+                  <p><a class="subtitle has-text-link" href="https://github.com/jozsa/monty">view code</a></p>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box has-background-white-ter">
+                  <figure class="image is-3by2" style="margin:auto;">
+                    <img src="resources/hbnb.png">
+                  </figure>
                   <p class="title has-text-dark">AirBnB Clone</p>
                   <p class="subtitle has-text-dark">An interactive clone with database storage</p>
                   <p class="subtitle has-text-dark"><strong class="has-text-dark">Technologies: </strong>Python, HTML/CSS, Javascript, MySQL/SQLAlchemy</p>
                   <p><a class="subtitle has-text-link" href="https://github.com/jozsa/AirBnB_clone_v4">view code</a></p>
                 </article>
               </div>
-              <div class="tile is-parent">
-                <article class="tile is-child box has-background-white-ter">
-                  <p class="title has-text-dark">Simple Shell</p>
-                  <p class="subtitle has-text-dark">Command interpreter built from scratch in C</p>
-                  <p class="subtitle has-text-dark"><strong class="has-text-dark">Technologies: </strong>C, C, and C</p>
-                  <p><a class="subtitle has-text-link" href="https://github.com/jozsa/simple_shell">view code</a></p>
-                </article>
-              </div>
             </div>
           </div>
         </div>
-      <div class=" hero-body">
-        <div class="container">
-          <h1 class="title">
-            Now that you like what you see, how do you contact me?
-          </h1>
-          <p>
-            You can find me on <a href="https://github.com/jozsa">Github</a>, <a href="https://twitter.com/weinermeister">twitter</a>, and <a href="https://www.linkedin.com/in/allison-weiner-4942317a/">LinkedIn</a>, or you can email me at <a href="mailto:allisonjoyweiner@gmail.com">allisonjoyweiner@gmail.com</a>.
-          </p>
-        </div>  
-      </div>
-      <div class=" hero-body">
-        <div class="container" id="contact">
-          <h1 class="title has-text-dark">
-            Before you go, check out my <a href="resources/allison_weiner_resume.pdf">resume</a>...
-          </h1>
-          <h2 class="subtitle has-text-dark">
-            or just <a class="has-text-link" href="resources/allison_weiner_resume.pdf" download="Allison_Weiner_Resume">download</a> it.
-          </h2>
-        </div>  
-      </div>
+        <section class="hero is-fullheight-with-navbar has-background-white-bis">
+          <div class="hero-body">
+            <div class="container" id="contact">
+              <h1 class="title">
+                Now that you like what you see, how do you contact me?
+              </h1>
+              <p>
+                You can find me on <a href="https://github.com/jozsa">Github</a>, <a href="https://twitter.com/weinermeister">twitter</a>, and <a href="https://www.linkedin.com/in/allison-weiner-4942317a/">LinkedIn</a>, or you can email me at <a href="mailto:allisonjoyweiner@gmail.com">allisonjoyweiner@gmail.com</a>.
+              </p>
+            </div>  
+          </div>
+          <div class=" hero-body">
+            <div class="container">
+              <h1 class="title has-text-dark">
+                Before you go, check out my <a href="resources/allison_weiner_resume.pdf" target="_blank">resume</a>...
+              </h1>
+              <h2 class="subtitle has-text-dark">
+                or just <a class="has-text-link" href="resources/allison_weiner_resume.pdf" download="Allison_Weiner_Resume">download</a> it.
+              </h2>
+            </div>  
+          </div>
+        </section>
     </section>
   </body>
 </html>
